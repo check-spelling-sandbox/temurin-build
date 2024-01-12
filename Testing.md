@@ -1,6 +1,6 @@
 # PR Testers
 
-openjdk-build is an open source project, therefore, we need to ensure the the code that is being deployed to our master branch doesn't break any existing code and actually works as expected.
+openjdk-build is an open source project, therefore, we need to ensure the code that is being deployed to our master branch doesn't break any existing code and actually works as expected.
 To achieve this level of testing, we use various jobs to compile, lint and test the code as well as running demo pipelines in a controlled sandbox environment if needs be.
 The demo pipelines are colloquially known as "The PR Tester" where the others are generally just referred to as "`checkname` check".
 

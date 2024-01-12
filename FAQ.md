@@ -128,7 +128,7 @@ To run them on the command-line, one can follow the same general instructions fo
 
 ## How do I build from a tag(without docker)
 
-The following are the pre-requisites for the the build to be successful
+The following are the pre-requisites for the build to be successful
 
 | Dependency            | Install command(Linux)|
 |-----------------------|-----------------------------------------|

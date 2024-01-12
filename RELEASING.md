@@ -433,6 +433,6 @@ If you need to create a point release with a one-off patch (Usually a cherry pic
 8. If the patch does change tests, a new ".1" branch should be created in aqa-tests, based off the release branch, which has the updatre to testenv.properties (If this was needed in the above example, you would create a v0.9.9.1-release branch)
 9. Run the release-openjdkXX-pipeline with:
    - the new `_adopt` tag as the `scmReference`
-   - `additionalConfigureArgs` of `--with-version-build=12` (replace 12 with the number after `+` but before new new `.1` in the version string)
+   - `additionalConfigureArgs` of `--with-version-build=12` (replace 12 with the number after `+` but before the new `.1` in the version string)
    - the `aqaReference` updated if step 8 was followed
    - the desired set of platforms defined in the `targetConfigurations` parameter
