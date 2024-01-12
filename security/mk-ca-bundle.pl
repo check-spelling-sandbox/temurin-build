@@ -210,7 +210,7 @@ sub is_in_list($@) {
   return defined(List::Util::first { $target eq $_ } @_);
 }
 
-# Parses $param_string as a case insensitive comma separated list with optional whitespace
+# Parses $param_string as a case-insensitive comma separated list with optional whitespace
 # validates that only allowed parameters are supplied
 sub parse_csv_param($$@) {
   my $description = shift;
