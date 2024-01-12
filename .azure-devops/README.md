@@ -36,7 +36,7 @@ If you don't have an Azure DevOps organization, you can start from
 2. Create a new Pipeline by using an **Existing Azure Pipeline YAML file**
    and choose `.azure-devops/pipelines.yml` file.
 
-   Plase set the `JAVA_TO_BUILD` variable in the review step.
+   Please set the `JAVA_TO_BUILD` variable in the review step.
 
 3. Start the pipeline and you can download the artifacts once the jobs complete.
 
