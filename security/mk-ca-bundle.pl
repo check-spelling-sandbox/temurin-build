@@ -23,11 +23,11 @@
 # This Perl script creates a fresh ca-bundle.crt file for use with libcurl.
 # It downloads certdata.txt from Mozilla's source tree (see URL below),
 # then parses certdata.txt and extracts CA Root Certificates into PEM format.
-# These are then processed with the OpenSSL commandline tool to produce the
+# These are then processed with the OpenSSL command-line tool to produce the
 # final ca-bundle.crt file.
 # The script is based on the parse-certs script written by Roland Krikava.
 # This Perl script works on almost any platform since its only external
-# dependency is the OpenSSL commandline tool for optional text listing.
+# dependency is the OpenSSL command-line tool for optional text listing.
 # Hacked by Guenter Knauf.
 #
 use Encode;
@@ -60,7 +60,7 @@ my %urls = (
 
 $opt_d = 'release';
 
-# If the OpenSSL commandline is not in search path you can configure it here!
+# If the OpenSSL command-line is not in search path you can configure it here!
 my $openssl = 'openssl';
 
 my $version = '1.28';
