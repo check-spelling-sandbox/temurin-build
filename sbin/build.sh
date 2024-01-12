@@ -80,7 +80,7 @@ configureBootJDKConfigureParameter() {
   addConfigureArgIfValueIsNotEmpty "--with-boot-jdk=" "${BUILD_CONFIG[JDK_BOOT_DIR]}"
 }
 
-# Shenandaoh was backported to Java 11 as of 11.0.9 but requires this build
+# Shenandoah was backported to Java 11 as of 11.0.9 but requires this build
 # parameter to ensure its inclusion. For Java 12+ this is automatically set
 configureShenandoahBuildParameter() {
   if [ "${BUILD_CONFIG[OPENJDK_CORE_VERSION]}" == "${JDK11_CORE_VERSION}" ]; then
