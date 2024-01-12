@@ -402,9 +402,9 @@ public final class TemurinGenSBOM {
           }
         }
         if (!foundFormula) {
-          System.out.println("addFormulationCompProp could not add add property as it couldn't find an entry for formula " + formulaName);
+          System.out.println("addFormulationCompProp could not add property as it couldn't find an entry for formula " + formulaName);
         } else if (!foundComponent) {
-          System.out.println("addFormulationCompProp could not add add property as it couldn't find an entry for component " + componentName);
+          System.out.println("addFormulationCompProp could not add property as it couldn't find an entry for component " + componentName);
         }
         return bom;
     }
