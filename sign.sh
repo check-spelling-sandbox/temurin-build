@@ -137,7 +137,7 @@ signRelease()
     ;;
 
     "mac"*)
-      # TODO: Remove this completly once https://github.com/adoptium/openjdk-jdk11u/commit/b3250adefed0c1778f38a7e221109ae12e7c421e has been backported to JDK8u
+      # TODO: Remove this completely once https://github.com/adoptium/openjdk-jdk11u/commit/b3250adefed0c1778f38a7e221109ae12e7c421e has been backported to JDK8u
       echo "Signing OSX release"
       ENTITLEMENTS="$WORKSPACE/entitlements.plist"
       MACSIGNSTRING="Apple Certification Authority"
