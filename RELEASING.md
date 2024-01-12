@@ -105,7 +105,7 @@ Affected repositories:
 - ensure downstream build jobs in <https://ci.adoptium.net/job/build-scripts/job/jobs/job/release/job/jobs/jdkXXu/> are created or updated
   1. `BUILD_CONFIGURATION.USE_ADOPT_SHELL_SCRIPTS` is set to `true`
   2. `DEFAULTS_JSON.repository.build_branch`, `ADOPT_DEFAULTS_JSON.repository.build_branch`, `DEFAULTS_JSON.repository.pipeline_branch` and `ADOPT_DEFAULTS_JSON.repository.pipeline_branch` should get correct release branch name as `releaseTag`
-  3. `DEFAULTS_JSON.repository.helper_ref` and `ADOPT_DEFAULTS_JSON.repository.helpe_ref` should get correct release branch name as `helperTag`
+  3. `DEFAULTS_JSON.repository.helper_ref` and `ADOPT_DEFAULTS_JSON.repository.helper_ref` should get correct release branch name as `helperTag`
 
 <details>
 <summary>FLOW CHART OF THE PIPELINE GENERATOR PROCESS</summary>
