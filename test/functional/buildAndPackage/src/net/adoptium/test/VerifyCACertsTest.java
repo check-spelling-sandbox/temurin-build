@@ -89,7 +89,7 @@ public class VerifyCACertsTest {
     TODO: import static org.testng.Assert.assertTrue;
     Verifies fingerprints of certs matching EXPFP_MAP.
     @Test
-    public void isCertContentMatch() throws xception {
+    public void isCertContentMatch() throws Exception {
         LOGGER.info("cacerts file: " + CACERTS);
         static MessageDigest md = MessageDigest.getInstance("SHA-256");
         try {
