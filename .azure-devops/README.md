@@ -31,7 +31,7 @@ If you don't have an Azure DevOps organization, you can start from
 
 1. Create a new **Project** and you can make it either **Public** or **Private**.
    For Public project you can get 10 free Microsoft-hosted agents.
-   [You can aways change the project visiblity later][azdo_make_project_public].
+   [You can aways change the project visibility later][azdo_make_project_public].
 
 2. Create a new Pipeline by using an **Existing Azure Pipeline YAML file**
    and choose `.azure-devops/pipelines.yml` file.
