@@ -259,7 +259,7 @@ and/or calls `configureBuild.sh`, `docker-build.sh` and/or `native-build.sh`.
 The structure of a build is:
 
  1. Configuration phase determines what the configuration of the build is based on your current
-platform and and optional arguments provided
+platform and optional arguments provided
  1. Configuration is written out to `config/built_config.cfg`
  1. Build is kicked off by either creating a docker container or running the native build script
  1. Build reads in configuration from `built_config.cfg`
