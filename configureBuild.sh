@@ -219,7 +219,7 @@ setRepository() {
 
 # Specific architectures need to have special build settings
 # shellcheck disable=SC2153
-processArgumentsforSpecificArchitectures() {
+processArgumentsForSpecificArchitectures() {
   local jvm_variant=server
   local build_full_name=""
   local make_args_for_any_platform=""
@@ -362,7 +362,7 @@ configure_build() {
   # Update the configuration with the arguments passed in, the platform etc
   setVariablesForConfigure
   setRepository
-  processArgumentsforSpecificArchitectures
+  processArgumentsForSpecificArchitectures
   setMakeCommandForOS
 
   determineBuildProperties
