@@ -9,7 +9,7 @@
 #   2 - GPG signature verification failed
 #   3 - SHA checksum failed
 #   4 - detected GCC/GLIBC version not as expected
-#   5 - CylconeDX validation checks failed
+#   5 - CycloneDX validation checks failed
 #   6 - SBOM contents did not meet expectations
 # Note that if there are multiple failures the highest will be the exit code
 # If there is a non-zero exit code check the output for "ERROR:"
