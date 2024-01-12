@@ -523,7 +523,7 @@ function configDefaults() {
   # Use Docker to build (defaults to false)
   BUILD_CONFIG[USE_DOCKER]=${BUILD_CONFIG[USE_DOCKER]:-false}
 
-  # Alow to debug docker build.sh script (dafult to false)
+  # Alow to debug docker build.sh script (default to false)
   BUILD_CONFIG[DEBUG_DOCKER]=${BUILD_CONFIG[DEBUG_DOCKER]:-false}
 
   # Location of DockerFile and where scripts get copied to inside the container
