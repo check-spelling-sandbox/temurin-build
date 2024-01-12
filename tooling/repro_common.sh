@@ -92,7 +92,7 @@ function removeSignatures() {
     echo "Removing all Signatures from ${MAC_JDK_ROOT}"
 
     if [ ! -d "${MAC_JDK_ROOT}/Contents" ]; then
-        echo "Error: ${MAC_JDK_ROOT} does not contain the MacOS JDK Contents directory"
+        echo "Error: ${MAC_JDK_ROOT} does not contain the macOS JDK Contents directory"
         exit 1
     fi
 

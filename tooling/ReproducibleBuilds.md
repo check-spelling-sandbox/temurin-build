@@ -43,9 +43,9 @@ comparable_patch.sh : Patches a JDK folder to enable "Comparable" comparison of 
 The patching process involves:
 
 - Expanding all zips and jmods, so executeables can be processed to remove signatures prior to comparison.
-- Removing Signatures (Windows & MacOS).
+- Removing Signatures (Windows & macOS).
 - Neutralise VS_VERSION_INFO Vendor strings (Windows).
-- Remove non-comparable CRC generated uuid values, which are binary values based on the hash of the content (Windows & MacOS).
+- Remove non-comparable CRC generated uuid values, which are binary values based on the hash of the content (Windows & macOS).
 - Remove Vendor strings embedded in executables, classes and text files.
 - Remove module-info differences due to "hash" of Signed module executables
 - Remove any non-deterministic build process artifact strings, like Manifest Created-By stamps.

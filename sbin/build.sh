@@ -113,7 +113,7 @@ configureReproducibleBuildParameter() {
 
           addConfigureArg "--with-source-date=" "${buildTimestampSeconds}"
 
-          # Specify --with-hotspot-build-time to ensure dual pass builds like MacOS use same time
+          # Specify --with-hotspot-build-time to ensure dual pass builds like macOS use same time
           # Use supplied date
           addConfigureArg "--with-hotspot-build-time=" "'${BUILD_CONFIG[BUILD_TIMESTAMP]}'"
       fi
@@ -192,7 +192,7 @@ configureReproducibleBuildDebugMapping() {
   fi
 }
 
-# Configure for MacOS Codesign
+# Configure for macOS Codesign
 configureMacOSCodesignParameter() {
   if [ -n "${BUILD_CONFIG[MACOSX_CODESIGN_IDENTITY]}" ]; then
     # This command needs to escape the double quotes because they are needed to preserve the spaces in the codesign cert name
@@ -1144,7 +1144,7 @@ addCompilerMacOS() {
   ## local macx_version="$(cat "${inputConfigFile}" | grep "* Toolchain:" | awk -F ':' '{print $2}' | sed -e 's/^[ \t]*//')"
   local macx_version="$(grep ".* Toolchain:" "${inputConfigFile}" | awk -F ':' '{print $2}' | sed -e 's/^[ \t]*//')"
 
-  echo "Adding MacOS compiler version to SBOM: ${macx_version}"
+  echo "Adding macOS compiler version to SBOM: ${macx_version}"
   addSBOMMetadataTools "${javaHome}" "${classpath}" "${sbomJson}" "MacOS Compiler" "${macx_version}"
 }
 

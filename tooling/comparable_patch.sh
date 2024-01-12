@@ -311,12 +311,12 @@ function removeWindowsNonComparableData() {
  echo "Successfully removed all EXE/DLL timestamps, CRC and debug repro hex from ${JDK_DIR}"
 }
 
-# Remove the MACOS dylib non-comparable data
-#   MacOS Mach-O format stores a uuid value that consists of a "hash" of the code and
+# Remove the macOS dylib non-comparable data
+#   macOS Mach-O format stores a uuid value that consists of a "hash" of the code and
 #   the some length part of the user's build folder.
 # See https://github.com/adoptium/temurin-build/issues/2899#issuecomment-1153757419
 function removeMacOSNonComparableData() {
-  echo "Removing MacOS dylib non-comparable UUID from ${JDK_DIR}"
+  echo "Removing macOS dylib non-comparable UUID from ${JDK_DIR}"
 
   FILES=$(find "${MAC_JDK_ROOT}" \( -type f -and -path '*.dylib' -or -path '*/bin/*' -or -path '*/lib/jspawnhelper' -not -path '*/modules_extracted/*' -or -path '*/jpackageapplauncher*' \))
   for f in $FILES
@@ -335,7 +335,7 @@ function removeMacOSNonComparableData() {
     fi
   done
 
-  echo "Successfully removed all MacOS dylib non-comparable UUID from ${JDK_DIR}"
+  echo "Successfully removed all macOS dylib non-comparable UUID from ${JDK_DIR}"
 }
 
 # Neutralize Windows VS_VERSION_INFO CompanyName from the resource compiled PE section
@@ -500,7 +500,7 @@ if [[ "$OS" =~ CYGWIN* ]]; then
 elif [[ "$OS" =~ Linux* ]]; then
   echo "On Linux"
 elif [[ "$OS" =~ Darwin* ]]; then
-  echo "On MacOS"
+  echo "On macOS"
   JDK_DIR="${JDK_DIR}/Contents/Home"
 else
   echo "Do not recognise OS: $OS"

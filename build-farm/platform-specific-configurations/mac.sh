@@ -100,9 +100,9 @@ fi
 echo "[WARNING] You may be asked for your su user password, attempting to switch Xcode version to ${XCODE_SWITCH_PATH}"
 sudo xcode-select --switch "${XCODE_SWITCH_PATH}"
 
-# No MacOS builds available of OpenJDK 7, OpenJDK 8 can boot itself just fine.
+# No macOS builds available of OpenJDK 7, OpenJDK 8 can boot itself just fine.
 if [ "${JDK_BOOT_VERSION}" == "7" ]; then
-  echo "No jdk7 boot JDK available on MacOS using jdk8"
+  echo "No jdk7 boot JDK available on macOS using jdk8"
   JDK_BOOT_VERSION="8"
 fi
 BOOT_JDK_VARIABLE="JDK${JDK_BOOT_VERSION}_BOOT_DIR"
