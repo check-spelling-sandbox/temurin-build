@@ -49,7 +49,7 @@ if [ -z "$TARGET_OS" ]; then
 fi
 
 ## Allow JAVA_TO_BUILD to be supplied as a parameter to the script
-## and if not there or definied in environment, use latest LTS (jdk11u)
+## and if not there or defined in environment, use latest LTS (jdk11u)
 if [ -z "$JAVA_TO_BUILD" ]; then
   if [ "$1" != "${1##jdk}" ]; then
     echo Setting JAVA_TO_BUILD to "$1" from the parameter supplied
