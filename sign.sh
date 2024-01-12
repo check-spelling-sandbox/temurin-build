@@ -38,10 +38,7 @@ TMP_DIR="${WORKSPACE}/${TMP_DIR_NAME}/"
 # http://timestamp.comodoca.com/authenticode -> OK 02/08/2030 -> Sectigo RSA Time Stamping Signer #1
 # http://timestamp.sectigo.com -> OK 02/08/2030 -> Sectigo RSA Time Stamping Signer #1 .. same as previous but with another url
 # http://timestamp.comodoca.com/rfc3161 -> OK 02/08/2030 -> Sectigo RSA Time Stamping Signer #1 .. same as previous but with another url
-# http://tsa.startssl.com/rfc3161 -> OK 15/08/2028 -> WoSign Time Stamping Signer ( buyed by WoTrus )
-# http://tsa.starfieldtech.com -> OK 17/09/2027 -> Starfield Timestamp Authority - G2
 # http://timestamp.globalsign.com/scripts/timstamp.dll -> OK 24/06/2027 -> GlobalSign TSA for MS Authenticode - G2
-# http://timestamp.digicert.com -> OK 22/10/2024 -> DigiCert Timestamp Responder
 TIMESTAMP_SERVER_CONFIG="./serverTimestamp.properties"
 
 checkSignConfiguration() {
