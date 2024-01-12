@@ -164,7 +164,7 @@ public final class JdkPlatform {
     /**
      * Trims and converts the given string to a lowercase value (or to an empty string if it is null).
      * @param str String to be converted
-     * @return Lowercase representation of the given string with whitespaces and newlines removed
+     * @return Lowercase representation of the given string with whitespace and newlines removed
      */
     private static String normalize(final String str) {
         if (str == null) {
