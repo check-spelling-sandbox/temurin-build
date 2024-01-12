@@ -37,7 +37,7 @@ if [ -z "$ARCHITECTURE"  ]; then
 fi
 
 ## Temurin uses "windows" instead of "cygwin" for the OS name on Windows
-## so needs to be special cased - on everthing else "uname" is valid
+## so needs to be special cased - on everything else "uname" is valid
 if [ -z "$TARGET_OS" ]; then
   TARGET_OS=$(uname)
   if [ "$OSTYPE"    = "cygwin" ]; then TARGET_OS=windows     ; fi
