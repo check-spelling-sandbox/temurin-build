@@ -434,5 +434,5 @@ If you need to create a point release with a one-off patch (Usually a cherry pic
 9. Run the release-openjdkXX-pipeline with:
    - the new `_adopt` tag as the `scmReference`
    - `additionalConfigureArgs` of `--with-version-build=12` (replace 12 with the number after `+` but before new new `.1` in the version string)
-   - the `aqaReference` updated if step 8 was followd
+   - the `aqaReference` updated if step 8 was followed
    - the desired set of platforms defined in the `targetConfigurations` parameter
