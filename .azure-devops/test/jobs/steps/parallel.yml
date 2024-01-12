@@ -16,7 +16,7 @@ steps:
         echo "##vso[task.setvariable variable=TEST_JDK_HOME]$PIPELINE_WORKSPACE/jdkbinary/j2sdk-image";
         echo "##vso[task.setvariable variable=TEST_DIR]$COMMON_TESTRESULTSDIRECTORY/openjdk-tests"
         echo "##vso[task.setvariable variable=TKG_DIR]$COMMON_TESTRESULTSDIRECTORY/openjdk-tests/TKG"
-      displayName: "Set environment varaibles"
+      displayName: "Set environment variables"
     - script: |
         echo "TEST_JDK_HOME ${TEST_JDK_HOME}";
         echo "TEST_DIR ${TEST_DIR}";
@@ -24,7 +24,7 @@ steps:
         echo "OPENJDK_BINARY ${OPENJDK_BINARY}";
         echo "ADOPT_TEST_REPO_BRANCH ${ADOPT_TEST_REPO_BRANCH}";
         echo "ADOPT_TEST_REPO_URI ${ADOPT_TEST_REPO_URI}";
-      displayName: "Print environment varaibles"
+      displayName: "Print environment variables"
 
     # clone AdoptOpenJDK/openjdk-tests repo
     - script: |

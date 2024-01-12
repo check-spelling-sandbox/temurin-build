@@ -56,7 +56,7 @@ steps:
     displayName: "[Windows Before] jdk8u install VS2013"
     condition: eq(variables['JAVA_TO_BUILD'], 'jdk8u')
 
-  # set system veraibles that will be used by following steps
+  # set system variables that will be used by following steps
   # cygpath is used to make sure JDK_BOOT_DIR & JAVA_HOME is correct in cygwin bash
   - bash: |
       echo "##vso[task.setvariable variable=JDK_BOOT_DIR]$(cygpath -u '${{ parameters.jdkBootDir }}')"
