@@ -227,7 +227,7 @@ RUN apt-get update \\
     gcc \\" >> "$DOCKERFILE_PATH"
   fi
 
-  # JDK8 uses zulu-7 as it's bootJDK
+  # JDK8 uses zulu-7 as its bootJDK
   if [ "${JDK_VERSION}" == 8 ]; then
     echo "    zulu-7 \\" >> "$DOCKERFILE_PATH"
   fi
@@ -252,7 +252,7 @@ ENV CC=gcc-7 CXX=g++-7" >> "$DOCKERFILE_PATH"
 }
 
 printDockerJDKs() {
-  # JDK8 uses zulu-7 to as it's bootjdk
+  # JDK8 uses zulu-7 as its bootjdk
   if [ "${JDK_VERSION}" != 8 ] && [ "${JDK_VERSION}" != "${JDK_MAX}" ]; then
     if [ "${JDK_VERSION}" == 11 ]; then
       if [ ${COMMENTS} == true ]; then

@@ -343,7 +343,7 @@ For the api.adoptium.net repository:
 - Eventually after rampdown and final phase testing the GA build is tagged and released, e.g. the `jdk-13-ga` code level is tagged along side the actual release build tag.
 - When a new release occurs, we must also update one of our job generators to match the new jdk versions and remove old STR that are no longer needed. The full details on what these are in the [regeneration README.md](https://github.com/adoptium/ci-jenkins-pipelines/blob/master/pipelines/build/regeneration/README.md) but for a quick run down on how to update them when we want to build a new release, follow the steps below:
 
-  1. Update the Job Folder - <https://ci.adoptium.net/job/build-scripts/job/utils/>: The jobs themselves you are looking for are called `pipeline_jobs_generator_jdkxx` (`pipeline_jobs_generator_jdk` for HEAD). Firstly, ensure that the job description of each generator (and it's parameter's descriptions) are up to date. Then, follow these steps:
+  1. Update the Job Folder - <https://ci.adoptium.net/job/build-scripts/job/utils/>: The jobs themselves you are looking for are called `pipeline_jobs_generator_jdkxx` (`pipeline_jobs_generator_jdk` for HEAD). Firstly, ensure that the job description of each generator (and its parameter's descriptions) are up to date. Then, follow these steps:
   
   - If you are ADDING a JDK version:
     - Ensure that JDK N-1 is available as build JDK on the builders. For example in order to build JDK 15, JDK 14 needs to be installed on the build machines. As a temporary measure, [code](./build-farm/platform-specific-configurations/linux.sh#L110) so as to download the JDK to the builder via the API has been added. NOTE: For the transition period shortly after a new JDK has been branched, there might not yet exist a generally available release of JDK N-1.
@@ -386,7 +386,7 @@ When this occurs, usually a Temurin committer will create the `jdk<version>u` up
 4. Run the renamed job twice, first one will fail due to empty repository, 2nd run should succeed.
 5. Add the Adoptium.md "marker" text file to both branches "dev" and "release".
 
-When the repository has been created, a few changes to the codebase will be necessary where the code references a jdk version but not it's new update version. I.e. `jdk11` became `jdk11u` when it was moved to an update repository.
+When the repository has been created, a few changes to the codebase will be necessary where the code references a jdk version but not its new update version. I.e. `jdk11` became `jdk11u` when it was moved to an update repository.
 
 *If a product is to be moved to an update repository, follow these steps in chronological order to ensure our builds continue to function:*
 
