@@ -289,7 +289,7 @@ Once the openjdk pipeline has completed:
 3. Publish packages for different OS
 
   3.1. **[Mac only]** Once the binaries are available on the website you need to update the Homebrew casks. There are 4 casks in total
-and all but the first one is in the `hombrew-cask-versions` repository. If you're doing a point release, the format of the version string is 11.0.20.1,1 so the version is always the same as "our" one but with the `+` replaced with a `,`
+and all but the first one is in the `homebrew-cask-versions` repository. If you're doing a point release, the format of the version string is 11.0.20.1,1 so the version is always the same as "our" one but with the `+` replaced with a `,`
 
 - [`temurin`](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/temurin.rb) which always serves the latest release version
 - [`temurin8`](https://github.com/Homebrew/homebrew-cask-versions/blob/master/Casks/temurin8.rb)
