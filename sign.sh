@@ -220,7 +220,7 @@ signRelease()
       fi
       ;;
     *)
-      echo "Skipping code signing as it's not supported on $OPERATING_SYSTEM"
+      echo "Skipping code signing as it isn't supported on $OPERATING_SYSTEM"
       ;;
   esac
 }
@@ -250,7 +250,7 @@ function extractArchive {
 }
 
 if [ "${OPERATING_SYSTEM}" != "windows" ] && [ "${OPERATING_SYSTEM}" != "mac" ]; then
-  echo "Skipping code signing as it's not supported on ${OPERATING_SYSTEM}"
+  echo "Skipping code signing as it isn't supported on ${OPERATING_SYSTEM}"
   exit 0;
 fi
 

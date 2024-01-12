@@ -67,7 +67,7 @@ addConfigureArg() {
   fi
 }
 
-# Add an argument to the configure call (if it's not empty)
+# Add an argument to the configure call (if it isn't empty)
 addConfigureArgIfValueIsNotEmpty() {
   # Only try to add an arg if the second argument is not empty.
   if [ -n "$2" ]; then
