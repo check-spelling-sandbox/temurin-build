@@ -398,7 +398,7 @@ function removeVendorName() {
 
 # Neutralise VersionProps.class/.java vendor strings
 function neutraliseVersionProps() {
-  echo "Dissassemble and remove vendor string lines from all VersionProps.class from ${JDK_DIR}"
+  echo "Disassemble and remove vendor string lines from all VersionProps.class from ${JDK_DIR}"
 
   FILES=$(find "${JDK_DIR}" -type f -name 'VersionProps.class')
   for f in $FILES
