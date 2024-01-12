@@ -84,7 +84,7 @@ echo "  VENDOR_VM_BUG_URL=$VENDOR_VM_BUG_URL"
 echo "  PATCH_VS_VERSION_INFO=$PATCH_VS_VERSION_INFO"
 
 # Remove excluded files known to differ
-#  NOTICE - Vendor specfic notice text file
+#  NOTICE - Vendor specific notice text file
 #  cacerts - Vendors use different cacerts
 #  classes.jsa, classes_nocoops.jsa - CDS archive caches will differ due to Vendor string differences
 function removeExcludedFiles() {
